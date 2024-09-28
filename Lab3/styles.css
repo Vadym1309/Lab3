@@ -1,0 +1,75 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #260042;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Стиль заголовка */
+h1 {
+    color: #e1ff00;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Стиль таблиці */
+table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #202204;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Стиль заголовків таблиці */
+th {
+    background-color: #00796b;
+    color: #d2f906;
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Стиль клітинок таблиці */
+td {
+    padding: 15px 10px;
+    font-size: 1rem;
+    color: #d5ff00;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Зміна кольору для парних рядків */
+tr:nth-child(even) {
+    background-color: #000000;
+}
+
+/* Стиль при наведенні на рядок */
+tr:hover {
+    background-color: #b2dfdb;
+    transition: background-color 0.3s ease;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
